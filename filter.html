@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//数组filter方法，理解为筛选，过滤器
+		//注意这里是filter不是filiter，刚才报错了..
+		let arr1 = [5,7,4,3,8,6,0,1]
+		//例子-筛选
+		let res = arr1.filter(item=>item<=4)
+		console.log(res)
+		//这里return true返回的是满足条件，（在网上搜索还可以理解为什么使用权返回给该对象），先按照视频里那样理解吧
+		
+		//例子
+		let msg = [
+			{title:'男士皮带',price:200},
+			{title:'男士皮鞋',price:235},
+			{title:'男士皮夹',price:1000},
+			{title:'男士衬衫',price:780}
+		]
+		let res1 = msg.filter(item=>item.price<500)
+		console.log(res1)
+		//我的sublime没装格式符号错误插件，但是vscode真心好用
+	</script>
+</body>
+</html>

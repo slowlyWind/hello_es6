@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//数组map方法,翻译可以理解为：映射，主要表现为：一一对应
+		//例子1：
+		let arr1 = [10,20,30,40]
+		let arr2 = arr1.map(item => item*2)
+
+		console.log(arr1)
+		console.log(arr2)
+		//该方法介绍了map最基本的使用,我来解读一下：map方法里传入参数，这个参数是回调函数，回调函数也可以传三个参数，item元素本身，index下标，array数组本身，返回的仍是数组，需要接受返回值而且一一对应
+		
+		//例子2：
+		let str1 = 'hello'
+		let arr3 = Array.prototype.map.call(str1,item=>item+item)
+		console.log(arr3)
+		//map是数组的方法，str并没有，但是可以通过call方法，谁有方法谁.call(要被执行的对象，回调函数)
+		//博大精深，一知半解...
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//数组reduce方法，理解为：汇总
+		//例子-求和
+		let arr1 = [10,20,30,40]
+		let result = arr1.reduce((tmp,cur)=>tmp+cur)
+		console.log(result)
+		//该方法可以理解为汇总求和，tmp是临时的值，cur是当前值
+		
+		//例子-平均值
+		let arr2 = [1,2,3,4]
+		let res = arr2.reduce((tmp,cur,i)=>{
+			if(arr2.length-1!=i){
+				return tmp+cur
+			}else{
+				return (tmp+cur)/arr2.length
+			}
+		})
+		console.log(res)
+		//该例子是求平均值,感觉该方法是通过覆盖来解决的，性能上应该不怎么高
+	</script>
+</body>
+</html>
