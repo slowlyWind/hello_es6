@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        //模板字符串
+        //通常拼接字符串拼接要考虑到换行，空格等特殊符号
+        let title = '标题'
+        let content = '内容'
+        let res1 = '<div>\
+        <h1>'+title+'</h1>\
+        <p>'+content+'</p>\
+        </div>'
+        
+        //模板字符串方法
+        let res2 = `<div>
+        <h1>${title}</h1>
+        <p>${content}</p>
+        </div>`
+        console.log(res2)
+        //这个方法真的挺牛逼
+    </script>
+</body>
+</html>

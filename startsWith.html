@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //字符串startsWidth方法
+        let str = 'http://www.baidu.com'
+        if(str.startsWith('https')){
+            console.log('加密网址')
+        }else if(str.startsWith('http')){
+            console.log('普通网址')
+        }else{
+            console.log('其他网址')
+        }
+        //indexOf:这个是返回下标，如果没有返回-1
+        let i = str.indexOf('www')
+        console.log(i)  //应该是7
+
+        //padStart:这个是满足长度，不足长度可以用第二参数代替
+        //这个方法常被用作时间(注意这个方法是String的)
+        let h = '1'
+        let m = '8'
+        let s = '36'
+        console.log('时间是:'+h+':'+m+':'+s)
+        console.log('时间是:'+h.padStart(2,0)+':'+m.padStart(2,0)+':'+s.padStart(2,0)) //用方法之后的
+    </script>
+</body>
+</html>

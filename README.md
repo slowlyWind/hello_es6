@@ -1,4 +1,6 @@
 # 这文章是学习es6的笔记。
 + 同时也介绍了一直想学习的数组方法。有很多不对的地方希望大家可以指正。
-## map,reduce,filter,forEach方法
++ 暂且只会这些方法，有机会的话一定多更一些，这些方法还是配合例子会更让人记住
+## map,reduce,filter,forEach方法--数组
 + 其实我觉得学习这些方法最好还是多看看视频，更容易理解。这些方法真的是多学多看，加油吧！！
+## startsWidth，endsWidth，padStart，indexOf--字符串
