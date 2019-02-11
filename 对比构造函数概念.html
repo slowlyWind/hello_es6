@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //es6之前
+        // function User(name,pass){
+        //     this.name = name
+        //     this.pass = pass
+        // }
+        // User.prototype.showName = function(){
+        //     alert(this.name)
+        // }
+        // User.prototype.showPass = function(){
+        //     alert(this.pass)
+        // }
+
+        // //继承
+        // function VipUser(name,pass,level){
+        //     User.call(this,name,pass)
+        //     this.level = level
+        // }
+        // VipUser.prototype = new User()
+        // VipUser.prototype.constructor = VipUser
+        // VipUser.prototype.showLevel = function(){
+        //     alert(this.level)
+        // }
+        // var vip = new VipUser('xu',123456,5)
+        // vip.showName()
+        // vip.showLevel()
+        
+        //es6之后
+        class User{
+            constructor(name,pass){
+                this.name = name
+                this.pass = pass
+            }
+            showName(){
+                alert(this.name)
+            }
+            showPass(){
+                alert(this.pass)
+            }
+        }
+
+        class VipUser extends User{
+            constructor(name,pass,level){
+                super(name,pass)
+                this.level = level
+            }
+            showLevel(){
+                alert(this.level)
+            }
+        }
+
+        var vip = new VipUser('xu',123456,10)
+        vip.showName()
+        vip.showPass()
+        vip.showLevel()
+    </script>
+</body>
+</html>
